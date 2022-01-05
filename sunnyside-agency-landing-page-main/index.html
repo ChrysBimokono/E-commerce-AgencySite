@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title> Sunnyside Landing Page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,51 +19,124 @@
   </style>
 </head>
 <body>
+  
+  <header>
+    <div class="logo"><img src="./images/logo.svg"></div>
+
+    <nav>
+      <ul class="primary-navigation flex">
+        <li><a class="ff-sans-normal" href="#">About</a></li>
+        <li><a class="ff-sans-normal" href="#">Services</a></li>
+        <li><a class="ff-sans-normal" href="#">Projects</a></li>
+        <li><a class="ff-sans-normal" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-nav-toggle"></button>
+  </header>
+  <section>
+    <div>
+      <div class="egg"><img src="./images/mobile/image-transform.jpg"></div>
+       <div class="transform">  
+          <h3 class="ff-fruances fs-700 text-verydarksaturated">Transform your brand</h3>
+      
+           <p class=" text text-darkblue"> We are a full-service creative agency specializing in helping brands grow fast. 
+             Engage your clients through compelling visuals that do most of the marketing for you.</p>
+           <p class=" more uppercase ff-fruances"> Learn More</p>
+        </div>
+  </div>
+  <div>
+    <div class="egg"><img src="./images/mobile/image-stand-out.jpg"></div>
+     <div class="transform">  
+        <h3 class="ff-fruances fs-700">Stand out to the right audience</h3>
+    
+         <p class=" text text-darkblue">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+          </p>
+         <p class=" more uppercase ff-fruances"> Learn More</p>
+      </div>
+</div>
+<div>
+<div class="container" >
+  <img  src="./images/mobile/image-graphic-design.jpg">
+  <div class="graphic transform">
+    <h3 class="ff-fruances fs-700 text-darksaturated"> Graphic Design</h3>
+    <p class=" text text-darksaturated">
+      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+     </p>
+  </div>
+</div>
+<div class="container" >
+  <img  src="./images/mobile/image-photography.jpg">
+  <div class="graphic transform">
+    <h3 class="ff-fruances fs-700 text-darksaturated"> Photography</h3>
+    <p class=" text text-darksaturated">
+      Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+     </p>
+  </div>
+</div>
+</div>
+<div class="testimonials">
+  <div class="testimony transform">
+    <img src="./images/image-emily.jpg">
+     <p class="text text-darkblue">  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+      </p>
+      <p class="text-verydarksaturated ff-fruances fs-700">Emily R.</p>
+      <span class="text-darkgrayishblue">Marketing Director</span>
+  </div>
+  <div class="testimony transform">
+    <img src="./images/image-thomas.jpg">
+     <p class="text text-darkblue">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+      </p>
+      <p class="text-verydarksaturated ff-fruances fs-700">Thomas S.</p>
+      <span class="text-darkgrayishblue"> Chief Operating Officer</span>
+  </div>
+  <div class="testimony transform">
+    <img src="./images/image-jennie.jpg">
+     <p class="text text-darkblue">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+      </p>
+      <p class="text-verydarksaturated ff-fruances fs-700">Jennie F.</p>
+      <span class="text-darkgrayishblue">Business Owner</span>
+  </div>
+  
+</div>
+  <div class="gallery">
+  <img class= "image-1" src="./images/mobile/image-gallery-milkbottles.jpg">
+  <img class= "image-2"src="./images/mobile/image-gallery-orange.jpg">
+  <img class= "image-3"src="./images/mobile/image-gallery-cone.jpg">
+  <img class= "image-4" src="./images/mobile/image-gallery-sugar-cubes.jpg">
+</div>
+  </section>
+  <footer>
+    <div><h2 class="title">Sunnyside</h2></div>
+    <section class="ft-main flex">
+      <div class="ft-main-item">
+        <h3 class="ft-title text-darkgrayishblue">About</h3>
+      </div>
+      <div class="ft-main-item">
+        <h3 class="ft-title text-darkgrayishblue">Services</h3>
+      </div>
+      <div class="ft-main-item">
+        <h3 class="ft-title text-darkgrayishblue">Projects</h3>
+      </div>
+  </section>
+  <!--social-->
+  <section class="ft-social">
+    <ul class="ft-social-list flex">
+      <li><a href="#"><img src="./images/icon-facebook.svg"></a></li>
+      <li><a href="#"><img src="./images/icon-instagram.svg"></a></li>
+      <li><a href="#"><img src="./images/icon-twitter.svg"></a></li>
+      <li><a href="#"><img src="./images/icon-pinterest.svg"></a></li>
+    </ul>
+  </section>
+  </footer>
+ <!--  
+  
+
   About
   Services
   Projects
   Contact
-
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
+ -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
