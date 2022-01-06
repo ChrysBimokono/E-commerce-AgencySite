@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
   <title> Sunnyside Landing Page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,45 +20,45 @@
   </style>
 </head>
 <body>
-  
-  <header>
+  <header class="primary-header flex">
     <div class="logo"><img src="./images/logo.svg"></div>
-
+     <!-- <div class="header">
+     <div class="header-text"><h3 class="ff-fruances fs-700 text-verydarksaturated">WE ARE CREATIVES</h3></div>
+      <div class="arrow"><img src="./images/icon-arrow-down.svg"></div>
+    </div>  -->
     <nav>
-      <ul class="primary-navigation flex">
+      <ul id="primary-navigation" class="primary-navigation flex" data-visible= false>
         <li><a class="ff-sans-normal" href="#">About</a></li>
         <li><a class="ff-sans-normal" href="#">Services</a></li>
         <li><a class="ff-sans-normal" href="#">Projects</a></li>
-        <li><a class="ff-sans-normal" href="#">Contact</a></li>
+        <li><a class="ff-sans-normal contact" href="#">Contact</a></li>
       </ul>
     </nav>
-    <button class="mobile-nav-toggle"></button>
+    <button class="mobile-nav-toggle" aria-expanded="false"></button>
   </header>
   <section>
-    <div>
-      <div class="egg"><img src="./images/mobile/image-transform.jpg"></div>
-       <div class="transform">  
+    <div class="desktop-layout grid-container-1">
+      <div class="image1 egg"><img src="./images/mobile/image-transform.jpg"></div>
+       <div class="text-1 transform">
           <h3 class="ff-fruances fs-700 text-verydarksaturated">Transform your brand</h3>
-      
            <p class=" text text-darkblue"> We are a full-service creative agency specializing in helping brands grow fast. 
              Engage your clients through compelling visuals that do most of the marketing for you.</p>
            <p class=" more uppercase ff-fruances"> Learn More</p>
         </div>
   </div>
-  <div>
-    <div class="egg"><img src="./images/mobile/image-stand-out.jpg"></div>
-     <div class="transform">  
+  <div class="desktop-layout grid-container-1">
+    <div class="image-2"><img src="./images/mobile/image-stand-out.jpg"></div>
+     <div class="transform">
         <h3 class="ff-fruances fs-700">Stand out to the right audience</h3>
-    
          <p class=" text text-darkblue">
           Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
           </p>
-         <p class=" more uppercase ff-fruances"> Learn More</p>
+         <p class=" more uppercase ff-fruances"> Learn More</p>   
       </div>
 </div>
-<div>
+<div class="desktop-layout grid-container-1">
 <div class="container" >
-  <img  src="./images/mobile/image-graphic-design.jpg">
+  <img class="image-designGraphic" src="./images/mobile/image-graphic-design.jpg">
   <div class="graphic transform">
     <h3 class="ff-fruances fs-700 text-darksaturated"> Graphic Design</h3>
     <p class=" text text-darksaturated">
@@ -67,7 +68,7 @@
 </div>
 <div class="container" >
   <img  src="./images/mobile/image-photography.jpg">
-  <div class="graphic transform">
+  <div class="graphic transform transform--1">
     <h3 class="ff-fruances fs-700 text-darksaturated"> Photography</h3>
     <p class=" text text-darksaturated">
       Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
@@ -75,7 +76,7 @@
   </div>
 </div>
 </div>
-<div class="testimonials">
+<div class="testimonials desktop-layout">
   <div class="testimony transform">
     <img src="./images/image-emily.jpg">
      <p class="text text-darkblue">  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
@@ -107,7 +108,7 @@
 </div>
   </section>
   <footer>
-    <div><h2 class="title">Sunnyside</h2></div>
+    <div><h2 class="title text-verydarksaturated ">Sunnyside</h2></div>
     <section class="ft-main flex">
       <div class="ft-main-item">
         <h3 class="ft-title text-darkgrayishblue">About</h3>
