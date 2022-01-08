@@ -13,31 +13,27 @@
   <script src="index.js" defer></script>
   <title> Sunnyside Landing Page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header class="primary-header flex">
     <div class="logo"><img src="./images/logo.svg"></div>
+    <button class="mobile-nav-toggle" aria-expanded="false"></button>
+    <h3 class="header-text ff-fruances">WE ARE CREATIVES</h3>
      <!-- <div class="header">
      <div class="header-text"><h3 class="ff-fruances fs-700 text-verydarksaturated">WE ARE CREATIVES</h3></div>
       <div class="arrow"><img src="./images/icon-arrow-down.svg"></div>
     </div>  -->
     <nav>
-      <ul id="primary-navigation" class="primary-navigation flex" data-visible= false>
+      <ul id="primary-navigation" class="primary-navigation flex" data-visible= true>
         <li><a class="ff-sans-normal" href="#">About</a></li>
         <li><a class="ff-sans-normal" href="#">Services</a></li>
         <li><a class="ff-sans-normal" href="#">Projects</a></li>
         <li><a class="ff-sans-normal contact" href="#">Contact</a></li>
       </ul>
     </nav>
-    <button class="mobile-nav-toggle" aria-expanded="false"></button>
   </header>
   <section>
-    <div class="desktop-layout grid-container-1">
+    <div class=" grid-container-1">
       <div class="image1 egg"><img src="./images/mobile/image-transform.jpg"></div>
        <div class="text-1 transform">
           <h3 class="ff-fruances fs-700 text-verydarksaturated">Transform your brand</h3>
@@ -46,7 +42,7 @@
            <p class=" more uppercase ff-fruances"> Learn More</p>
         </div>
   </div>
-  <div class="desktop-layout grid-container-1">
+  <div class=" grid-container-1">
     <div class="image-2"><img src="./images/mobile/image-stand-out.jpg"></div>
      <div class="transform">
         <h3 class="ff-fruances fs-700">Stand out to the right audience</h3>
@@ -56,9 +52,9 @@
          <p class=" more uppercase ff-fruances"> Learn More</p>   
       </div>
 </div>
-<div class="desktop-layout grid-container-1">
-<div class="container" >
-  <img class="image-designGraphic" src="./images/mobile/image-graphic-design.jpg">
+<div class="grid-container-1">
+<div class="container desktop-layout " >
+  <img class="image-designGraphic" src="./images/mobile/image-graphic-design.jpg"> 
   <div class="graphic transform">
     <h3 class="ff-fruances fs-700 text-darksaturated"> Graphic Design</h3>
     <p class=" text text-darksaturated">
@@ -76,7 +72,7 @@
   </div>
 </div>
 </div>
-<div class="testimonials desktop-layout">
+<div class="testimonials">
   <div class="testimony transform">
     <img src="./images/image-emily.jpg">
      <p class="text text-darkblue">  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
@@ -138,9 +134,6 @@
   Projects
   Contact
  -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>

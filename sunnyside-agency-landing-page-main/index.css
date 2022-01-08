@@ -58,8 +58,6 @@ img{
 body{
     font-size: var(--fs-600);
     background-color: papayawhip;
-
-  
 }
 
 /*typography*/
@@ -142,19 +140,21 @@ z-index: -1;
     right: 9rem;
 }
 
+.desktop-layout{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 @media (min-width:35rem){ 
     .header-text{
-        margin-top: 7rem;
-        position: relative;
-        right: 8rem;
-        margin: 7rem; 
-        text-align: center;
-        justify-content: center;
+     
     }
     
     .header-text> h3{
-        font-size: 2rem;
-        color: hsl(var(--clr-White));
+        
     }
     /* .desktop-layout{
         display: flex;
@@ -209,7 +209,7 @@ z-index: -1;
 
 /*our css*/
 header{
-    height: 200vh;
+    height: 100vh;
      background-image: url(./images/mobile/image-header.jpg); 
     background-size: cover;
     background-position: center center;
@@ -225,18 +225,13 @@ header{
 
 
 .header-text{
-    position: absolute;
-    margin: 3rem;
-    /* position: absolute;
-    margin: 7rem; */
+    margin-inline: auto;
+    padding-inline: 1rem;
     text-align: center;
-    justify-content: center;
-}
-
-.header-text> h3{
-    font-size: 2rem;
+    font-size: 2.9rem;
     color: hsl(var(--clr-White));
 }
+
 
 .arrow{
     position: absolute;
