@@ -140,13 +140,13 @@ z-index: -1;
     right: 9rem;
 }
 
-.desktop-layout{
+/* .desktop-layout{
     background-image: url(./images/mobile/image-graphic-design.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-}
+} */
 
 @media (min-width:35rem){ 
     .header-text{
@@ -359,6 +359,7 @@ footer{
 
 .ft-social-list li{
     margin: 1rem;
+    list-style: none;
 }
 
 
